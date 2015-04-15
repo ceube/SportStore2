@@ -10,7 +10,7 @@ namespace SportsStore.Domain.Entities
     {
         private List<CartLine> lineCollection = new List<CartLine>();
 
-        public void AdItem(Product product, int quantity)
+        public void AddItem(Product product, int quantity)
         {
 
             CartLine line = lineCollection.Where(p => p.Product.ProductID == product.ProductID)
