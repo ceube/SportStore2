@@ -26,7 +26,7 @@ namespace SportsStore.WebUI.Controllers
 
             if (product != null)
             {
-                GetCart().AddItem(product, 1);
+               // GetCart().AddItem(product, 1);
             }
 
             return RedirectToAction("Index", new  { returnUrl });
